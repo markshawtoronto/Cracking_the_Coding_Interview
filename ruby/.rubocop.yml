@@ -1,0 +1,174 @@
+AllCops:
+  TargetRubyVersion: 2.3.3
+  Exclude:
+    - features/**/*
+    - vendor/**/*
+    - db/**/*
+    - bin/**/*
+    - config/initializers/active_model_extensions.rb
+
+Style/HashSyntax:
+  Description: >-
+                 Prefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 syntax
+                 { :a => 1, :b => 2 }.
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#hash-literals'
+  Enabled: true
+
+Style/StringLiterals:
+  Description: 'Checks if uses of quotes match the configured preference.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-string-literals'
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+  Enabled: true
+
+Metrics/LineLength:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Layout/LeadingCommentSpace:
+  Enabled: false
+
+Layout/IndentFirstArrayElement:
+  Enabled: false
+
+Layout/IndentHeredoc:
+  EnforcedStyle: active_support
+
+Style/WordArray:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/Semicolon:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Style/ClassVars:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Layout/AlignParameters:
+  Enabled: false
+
+Layout/AlignArray:
+  Enabled: false
+
+Layout/AlignHash:
+  Enabled: false
+
+Lint/UselessAssignment:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/RedundantReturn:
+  Enabled: false
+
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+
+Style/RaiseArgs:
+  Enabled: false
+
+Style/RedundantException:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/ModuleFunction:
+  Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Style/GlobalVars:
+  Enabled: false
+
+Style/NegatedIf:
+  Enabled: false
+
+Metrics/BlockNesting:
+  Enabled: false
+
+Style/ConditionalAssignment:
+  Enabled: false
+
+Style/SpecialGlobalVars:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
+Style/RescueModifier:
+  Enabled: false
+
+Style/YodaCondition:
+  Enabled: false
+
+Lint/UselessAccessModifier:
+  Enabled: false
+
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Style/SelfAssignment:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Style/EmptyElse:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Style/IfInsideElse:
+  Enabled: false
+
+Style/StructInheritance:
+  Enabled: false
+
+Layout/IndentFirstHashElement:
+  Enabled: false
