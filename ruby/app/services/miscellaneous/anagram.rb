@@ -1,4 +1,5 @@
-# Determine if two strings are anagrams of each other.
+# Determine how many characters are different between two strings.
+# If these characters were removed, the two strings would be anagrams.
 
 module Miscellaneous
   module Anagram
