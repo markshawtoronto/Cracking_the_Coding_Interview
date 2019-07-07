@@ -1,3 +1,5 @@
+# Determine if a string can be formed from the characters in a given magazine.
+
 module Chapter0
   module Problem3
     extend self
