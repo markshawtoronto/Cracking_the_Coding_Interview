@@ -103,6 +103,7 @@ GEM
       thor (>= 0.14, < 2.0)
     launchy (2.4.3)
       addressable (~> 2.3)
+    linked-list (0.0.13)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -243,6 +244,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   launchy
+  linked-list
   listen (~> 3.0.5)
   nokogiri
   puma (~> 3.0)
