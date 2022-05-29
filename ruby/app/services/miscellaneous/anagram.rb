@@ -6,31 +6,31 @@ module Miscellaneous
     extend self
 
     def make_anagram(a, b)
-      anagram_subtraction = 0
-      a_letter_count = letter_count_from_string(a)
-      b_letter_count = letter_count_from_string(b)
-
-      letter_differences = a_letter_count.merge(b_letter_count) do |_key, a_value, b_value|
-        a_value - b_value
-      end
-      letter_differences.each do |_key, value|
-        anagram_subtraction += value.abs
-      end
-
-      anagram_subtraction
-    end
-
-    private
-
-    def letter_count_from_string(string)
-      string_letter_count = {}
-      string.split("").each do |letter|
-        if string_letter_count[letter].nil?
-          string_letter_count[letter] = 0
+      # Create a histogram for characters in a
+      histogram = {}
+      a.chars.each do |letter|
+        if histogram[letter].nil?
+          histogram[letter] = 1
+        else
+          histogram[letter] += 1
         end
-        string_letter_count[letter] += 1
       end
-      string_letter_count
+
+      # Loop over b, subtracting characters from the histogram
+      b.chars.each do |letter|
+        if histogram[letter].nil?
+          histogram[letter] = -1
+        else
+          histogram[letter] -= 1
+        end
+      end
+
+      # Loop over the histogram, taking the absolute value of the remaining.
+      result = 0
+      histogram.each do |letter, value|
+        result += value.abs
+      end
+      result
     end
   end
 end
