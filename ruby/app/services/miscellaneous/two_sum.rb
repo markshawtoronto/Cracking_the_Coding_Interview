@@ -18,16 +18,19 @@ module Miscellaneous
     end
 
     # Find which two values in an array add up to a sum.
+    #
+    # ## O(n)log(n)
+    # ## Create a hash
+    # ## Move one pointer and lookup if target is in the hash
     def self.two_sum_problem(array, sum)
       hash = {}
-      array.each_with_index do |value, index|
-        hash[value] = index
+      nums.each_with_index do |num, i|
+        hash[num] = i
       end
 
-      array.each_with_index do |value, index|
-        lookup_index = hash[sum - value]
-        if !lookup_index.nil? && index != lookup_index
-          return [index, lookup_index]
+      nums.each_with_index do |num, i|
+        if hash[target - num] != nil && hash[target - num] != i
+          return [i, hash[target - num]]
         end
       end
     end

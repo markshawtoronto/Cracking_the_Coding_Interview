@@ -18,15 +18,15 @@ describe Miscellaneous::TwoSum do
   end
 
   context "#two_sum_problem" do
-    it "should return the correct pair when there is only one option" do
+    it "should return the correct pair for the simplest array" do
       expect(Miscellaneous::TwoSum.two_sum_problem([100, 0], 100)).to eq([0, 1])
     end
 
-    it "should return the correct pair when there is more than one option" do
+    it "should return the correct pair when there is more than one element in the array" do
       expect(Miscellaneous::TwoSum.two_sum_problem([100, 99, 44, 12, 0], 100)).to eq([0, 4])
     end
 
-    it "should return the correct pair when there tricks" do
+    it "should return the correct pair when there are tricks" do
       expect(Miscellaneous::TwoSum.two_sum_problem([3, 2, 4], 6)).to eq([1, 2])
     end
   end
